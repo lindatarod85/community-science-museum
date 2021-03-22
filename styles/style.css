@@ -10,14 +10,14 @@
 
 body {
   background-color: #D6D2C4;
-  font-family: open sans, montserrat, sans-serif;
+  font-family: open sans, arial, sans-serif;
 }
 
 h1 {
-  font-size: 22px;
+  font-size: 16px;
 }
 h2 {
-  font-size: 18px;
+  font-size: 14px;
 }
 p {
   font-size: 14px;
@@ -28,7 +28,7 @@ p {
 /*Header*/
 
 .logo {
-  font-size: 28px;
+  font-size: 18px;
   font-weight: bold;
   color: #1B365D;
   padding: 5px 15px;
@@ -157,6 +157,12 @@ footer p:nth-of-type(1) {
 
 
 /*Media queries*/
+
+@media (min-width: 500px) {
+  .logo {
+    font-size: 28px;
+  }
+}
 
 @media (min-width: 900px) {
   nav ul {
