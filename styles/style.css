@@ -33,7 +33,6 @@ p {
   color: #1B365D;
   padding: 5px 15px;
   display: flex;
-  justify-content: center;
 }
 
 header a {
@@ -109,6 +108,7 @@ nav label {
 h1 {
   width: 250px;
   margin: auto;
+  margin-bottom: 20px;
 }
 
 .call-to-action {
@@ -129,10 +129,6 @@ h1 {
 
 .visit p:nth-of-type(1) {
   font-weight: bold;
-}
-
-h2 {
-  margin-top: 50px;
 }
 
 /*Home*/
@@ -184,7 +180,6 @@ footer p:nth-of-type(1) {
 
   .logo {
     font-size: 32px;
-    justify-content: start;
   }
 
   header a {
@@ -211,6 +206,7 @@ footer p:nth-of-type(1) {
   h2 {
     grid-column: -1/1;
     font-size: 22px;
+    margin-top: 50px;
   }
 
   p {
