@@ -89,27 +89,47 @@ nav label {
 
 /*Header*/
 
-/*Home*/
+/*Images*/
 
-.image-group-1 {
+.image-group-1, .image-group-2, .image-group-3 {
   width: 250px;
   height: 250px;
   object-fit: cover;
 }
 
-.see-and-do, .visit, .events {
+/*Global styles*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+.see-and-do, 
+.visit, 
+.events, 
+.exhibitions, 
+.activities, 
+.school, 
+.entrance, 
+.accessibility, 
+.food, 
+.shop {
   display: grid;
   grid-template-columns: 1fr;
   gap: 15px;
   width: 250px;
   margin: auto;
+  margin-top: 30px;
 }
 
-h1 {
+h1,
+.welcome {
   width: 250px;
   margin: auto;
-  margin-bottom: 20px;
 }
+
+/*Global styles*/
+
+/*Home*/
 
 .call-to-action {
   text-decoration: none;
@@ -132,6 +152,84 @@ h1 {
 }
 
 /*Home*/
+
+/*Visit*/
+
+.welcome img {
+  margin-top: 30px;
+}
+
+.welcome p:nth-of-type(2) {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.visit-scroll-to-section {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  margin: auto;
+  margin-top: 15px;
+} 
+
+.visit-scroll-to-section a {
+  text-decoration: none;
+  color:  #1B365D;
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+
+.visit-scroll-to-section a:hover {
+  text-decoration: underline 2px #1B365D;
+}
+
+/*Visit*/
+
+/*See and Do*/
+
+.see-do-text {
+  width: 250px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.see-do-scroll-to-section a {
+  display: block;
+  text-decoration: none;
+  color: #1B365D;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.see-do-scroll-to-section a:hover {
+  text-decoration: underline 2px #1B365D;
+}
+
+.see-do-scroll-to-section {
+  display: grid;
+  gap: 25px;
+  width: 250px;
+  margin: auto;
+}
+
+.bold {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.contact {
+  text-decoration: none;
+  color: #1B365D;
+  font-weight: bold;
+}
+
+.contact:hover {
+  text-decoration: underline 2px #1B365D ;
+}
+
+/*See and Do*/
 
 /*Footer*/
 
@@ -186,7 +284,9 @@ footer p:nth-of-type(1) {
     font-size: 24px;
   }
 
-  .see-and-do, .events {
+  .see-and-do, 
+  .events, 
+  .see-do-scroll-to-section {
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
     width: 750px;
@@ -206,11 +306,17 @@ footer p:nth-of-type(1) {
   h2 {
     grid-column: -1/1;
     font-size: 22px;
-    margin-top: 50px;
   }
 
   p {
     font-size: 18px;
+  }
+
+  .see-do-text {
+    width: 750px;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
   }
 
   .see-and-do p {
@@ -221,13 +327,48 @@ footer p:nth-of-type(1) {
     grid-column: span 3;
   }
 
-  .visit {
-    grid-template-columns: 1fr 1fr;
+  .welcome, 
+  .exhibitions, 
+  .activities,
+  .school,
+  .image-group-2,
+  .image-group-3 {
     width: 750px;
   }
 
   .visit img {
     width: 500px;
+  }
+
+  .visit-scroll-to-section {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 750px;
+  }
+
+  .visit, 
+  .entrance, 
+  .accessibility, 
+  .food, 
+  .shop {
+    grid-template-columns: 1fr 1fr;
+    width: 750px;
+  }
+
+  .entrance div, 
+  .accessibility div, 
+  .food div, 
+  .shop div:nth-of-type(2) {
+    justify-self: end;
+  }
+
+  .flex-images {
+    display: flex;
+    justify-content: center;
+  }
+
+  .flex-images img {
+    padding-left: 15px;
   }
 
   footer {
@@ -242,16 +383,28 @@ footer p:nth-of-type(1) {
 
 @media (min-width: 1300px) {
   .image-group-1 {
-    width: 400px;
+    width: 300px;
     height: 300px;
   }
 
-  .see-and-do, .visit, .events {
-    width: 1300px;
+  .see-and-do, 
+  .visit, 
+  .events, 
+  .welcome, 
+  .visit-scroll-to-section, 
+  .entrance, 
+  .accessibility, 
+  .food, 
+  .shop, 
+  .see-do-scroll-to-section, 
+  .exhibitions,
+  .activities,
+  .school {
+    width: 1000px;
   }
 
   h1 {
-    width: 1300px;
+    width: 1000px;
     font-size: 36px;
   }
 
@@ -259,10 +412,25 @@ footer p:nth-of-type(1) {
     font-size: 26px;
   }
 
-  .visit img {
-    width: 600px;
+  .see-do-text {
+    width: 1000px;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
   }
 
+  .image-group-2, .image-group-3 {
+    width: 1000px;
+    height: 350px;
+  }
+
+  .visit-scroll-to-section a {
+    font-size: 24px;
+  }
+
+  .see-do-scroll-to-section a {
+    font-size: 24px;
+  }
 }
 
 
