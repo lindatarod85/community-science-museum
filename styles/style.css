@@ -91,7 +91,7 @@ nav label {
 
 /*Images*/
 
-.image-group-1, .image-group-2, .image-group-3 {
+.image-group-1, .image-group-2 {
   width: 250px;
   height: 250px;
   object-fit: cover;
@@ -112,7 +112,8 @@ html {
 .entrance, 
 .accessibility, 
 .food, 
-.shop {
+.shop,
+.event-list {
   display: grid;
   grid-template-columns: 1fr;
   gap: 15px;
@@ -122,7 +123,13 @@ html {
 }
 
 h1,
-.welcome {
+.welcome,
+.about,
+.support,
+.volunteer,
+.internships,
+.researchers,
+.flex-images {
   width: 250px;
   margin: auto;
 }
@@ -231,6 +238,52 @@ h1,
 
 /*See and Do*/
 
+/*Contact*/
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+input {
+  padding: 10px;
+}
+
+textarea {
+  height: 100px;
+}
+
+.send {
+  background-color: #1B365D;
+  color: #D6D2C4;
+  border-radius: 50px;
+  margin-top: 15px;
+  font-weight: bold;
+  max-width: 250px;
+}
+
+.send:hover {
+  text-decoration: underline 2px;
+}
+
+/*Contact*/
+
+/*About*/
+
+.about img,
+.support,
+.volunteer,
+.internships,
+.researchers {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+/*About*/
+
 /*Footer*/
 
 footer {
@@ -305,10 +358,11 @@ footer p:nth-of-type(1) {
 
   h2 {
     grid-column: -1/1;
-    font-size: 26px;
+    font-size: 24px;
   }
 
-  p {
+  p,
+  .contact {
     font-size: 18px;
   }
 
@@ -332,7 +386,13 @@ footer p:nth-of-type(1) {
   .activities,
   .school,
   .image-group-2,
-  .image-group-3 {
+  form,
+  .about,
+  .support,
+  .volunteer,
+  .internships,
+  .researchers,
+  .flex-images {
     width: 750px;
   }
 
@@ -350,17 +410,16 @@ footer p:nth-of-type(1) {
   .entrance, 
   .accessibility, 
   .food, 
-  .shop {
+  .shop,
+  .event-list {
     grid-template-columns: 1fr 1fr;
     width: 750px;
   }
 
-  .entrance div, 
-  .accessibility div, 
-  .food div, 
-  .shop div:nth-of-type(2) {
+  .end {
     justify-self: end;
   }
+
 
   .flex-images {
     display: flex;
@@ -399,7 +458,14 @@ footer p:nth-of-type(1) {
   .see-do-scroll-to-section, 
   .exhibitions,
   .activities,
-  .school {
+  .school,
+  .event-list,
+  form,
+  .about,
+  .support,
+  .volunteer,
+  .internships,
+  .researchers {
     width: 1000px;
   }
 
@@ -414,7 +480,7 @@ footer p:nth-of-type(1) {
     margin-bottom: 25px;
   }
 
-  .image-group-2, .image-group-3 {
+  .image-group-2 {
     width: 1000px;
     height: 350px;
   }
