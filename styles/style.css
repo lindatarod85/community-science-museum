@@ -238,6 +238,14 @@ h1,
 
 /*See and Do*/
 
+/*Events*/
+
+.event-list div:nth-of-type(1n+3) {
+  margin-top: 30px;
+}
+
+/*Events*/
+
 /*Contact*/
 
 form {
