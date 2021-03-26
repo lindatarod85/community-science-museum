@@ -103,6 +103,11 @@ html {
   scroll-behavior: smooth;
 }
 
+main {
+  width: 250px;
+  margin: auto;
+}
+
 .see-and-do, 
 .visit, 
 .events, 
@@ -117,21 +122,7 @@ html {
   display: grid;
   grid-template-columns: 1fr;
   gap: 15px;
-  width: 250px;
-  margin: auto;
   margin-top: 30px;
-}
-
-h1,
-.welcome,
-.about,
-.support,
-.volunteer,
-.internships,
-.researchers,
-.flex-images {
-  width: 250px;
-  margin: auto;
 }
 
 /*Global styles*/
@@ -174,8 +165,6 @@ h1,
 .visit-scroll-to-section {
   display: flex;
   flex-direction: column;
-  width: 250px;
-  margin: auto;
   margin-top: 15px;
 } 
 
@@ -196,8 +185,6 @@ h1,
 /*See and Do*/
 
 .see-do-text {
-  width: 250px;
-  margin: auto;
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -217,8 +204,6 @@ h1,
 .see-do-scroll-to-section {
   display: grid;
   gap: 25px;
-  width: 250px;
-  margin: auto;
 }
 
 .bold {
@@ -240,7 +225,7 @@ h1,
 
 /*Events*/
 
-.event-list div:nth-of-type(1n+3) {
+.event-list div:nth-of-type(2n+3) {
   margin-top: 30px;
 }
 
@@ -251,8 +236,6 @@ h1,
 form {
   display: flex;
   flex-direction: column;
-  width: 250px;
-  margin: auto;
   margin-top: 30px;
 }
 
@@ -313,10 +296,93 @@ footer p:nth-of-type(1) {
 
 /*Media queries*/
 
-@media (min-width: 500px) {
-  .logo {
-    font-size: 28px;
+@media (min-width: 600px) {
+  main {
+    width: 500px;
+    margin: auto;
   }
+  .see-and-do, 
+  .events, 
+  .see-do-scroll-to-section {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+
+  h2 {
+    grid-column: -1/1;
+  }
+
+  .see-and-do p {
+    grid-column: span 3;
+  }
+
+  .see-and-do a, .events a {
+    grid-column: span 3;
+  }
+
+  .image-group-1 {
+    width: 150px;
+    height: 150px;
+  }
+
+  .image-group-2 {
+    width: 500px;
+  }
+  
+  .visit img {
+    width: 250px
+  }
+
+  .entrance img,
+  .accessibility img,
+  .food img,
+  .shop img,
+  .event-list img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .visit-scroll-to-section {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .call-to-action {
+    max-width: 250px;
+  }
+
+  .visit-scroll-to-section a,
+  .see-do-scroll-to-section a {
+    font-size: 14px;
+  }
+
+  .visit, 
+  .entrance, 
+  .accessibility, 
+  .food, 
+  .shop,
+  .event-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .end {
+    justify-self: end;
+  }
+
+
+  .flex-images {
+    display: flex;
+    justify-content: center;
+  }
+
+  .flex-images img {
+    padding-left: 15px;
+  }
+
+  .event-list div:nth-of-type(1n+3) {
+  margin-top: 30px;
+}
+
 }
 
 @media (min-width: 900px) {
@@ -345,12 +411,9 @@ footer p:nth-of-type(1) {
     font-size: 24px;
   }
 
-  .see-and-do, 
-  .events, 
-  .see-do-scroll-to-section {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+  main {
     width: 750px;
+    margin: auto;
   }
 
   .call-to-action {
@@ -358,8 +421,6 @@ footer p:nth-of-type(1) {
   }
 
   h1 {
-    width: 750px;
-    margin: auto;
     margin-top: 30px;
     font-size: 36px;
   }
@@ -370,72 +431,43 @@ footer p:nth-of-type(1) {
   }
 
   p,
-  .contact {
+  .contact,
+  .visit-scroll-to-section a,
+  .see-do-scroll-to-section a {
     font-size: 18px;
   }
 
   .see-do-text {
-    width: 750px;
-    margin: auto;
     margin-top: 25px;
     margin-bottom: 25px;
   }
 
-  .see-and-do p {
-    grid-column: span 3;
+  .image-group-1,
+  .entrance img,
+  .accessibility img,
+  .food img,
+  .shop img,
+  .event-list img {
+    width: 250px;
+    height: 250px;
   }
 
-  .see-and-do a, .events a {
-    grid-column: span 3;
-  }
-
-  .welcome, 
-  .exhibitions, 
-  .activities,
-  .school,
-  .image-group-2,
-  form,
-  .about,
-  .support,
-  .volunteer,
-  .internships,
-  .researchers,
-  .flex-images {
+  .image-group-2 {
     width: 750px;
   }
 
   .visit img {
     width: 500px;
+    height: 250px;
+  }
+
+  .call-to-action {
+    max-width: 400px;
   }
 
   .visit-scroll-to-section {
     flex-direction: row;
     justify-content: space-between;
-    width: 750px;
-  }
-
-  .visit, 
-  .entrance, 
-  .accessibility, 
-  .food, 
-  .shop,
-  .event-list {
-    grid-template-columns: 1fr 1fr;
-    width: 750px;
-  }
-
-  .end {
-    justify-self: end;
-  }
-
-
-  .flex-images {
-    display: flex;
-    justify-content: center;
-  }
-
-  .flex-images img {
-    padding-left: 15px;
   }
 
   footer {
@@ -449,57 +481,54 @@ footer p:nth-of-type(1) {
 
 
 @media (min-width: 1300px) {
+  main {
+    width: 1050px;
+    margin: auto;
+  }
+
   .image-group-1 {
     width: 300px;
     height: 300px;
   }
 
-  .see-and-do, 
-  .visit, 
-  .events, 
-  .welcome, 
-  .visit-scroll-to-section, 
-  .entrance, 
-  .accessibility, 
-  .food, 
-  .shop, 
-  .see-do-scroll-to-section, 
-  .exhibitions,
-  .activities,
-  .school,
-  .event-list,
-  form,
-  .about,
-  .support,
-  .volunteer,
-  .internships,
-  .researchers {
-    width: 1000px;
-  }
-
-  h1 {
-    width: 1000px;
-  }
-
   .see-do-text {
-    width: 1000px;
-    margin: auto;
     margin-top: 25px;
     margin-bottom: 25px;
   }
 
   .image-group-2 {
-    width: 1000px;
+    width: 1050px;
     height: 350px;
   }
 
-  .visit-scroll-to-section a {
-    font-size: 24px;
-  }
-
+  .visit-scroll-to-section a,
   .see-do-scroll-to-section a {
     font-size: 24px;
   }
+
+.see-and-do img:nth-of-type(2) {
+  justify-self: center;
+}
+
+.see-and-do img:nth-of-type(3) {
+  justify-self: end;
+}
+
+.events div:nth-of-type(2) {
+  justify-self: center;
+}
+
+.events div:nth-of-type(3) {
+  justify-self: end;
+}
+
+.see-do-scroll-to-section div:nth-of-type(2) {
+  justify-self: center;
+}
+
+.see-do-scroll-to-section div:nth-of-type(3) {
+  justify-self: end;
+}
 }
 
 
