@@ -189,7 +189,7 @@ form {
   object-fit: cover;
 }
 
-.welcome img,
+iframe,
 .event-list div:nth-of-type(2n + 3),
 .event-list .bold,
 .about img,
@@ -271,7 +271,8 @@ footer p:nth-of-type(1) {
     height: 150px;
   }
 
-  .image-group-2 {
+  .image-group-2,
+  iframe {
     width: 500px;
   }
 
@@ -386,7 +387,8 @@ footer p:nth-of-type(1) {
     height: 250px;
   }
 
-  .image-group-2 {
+  .image-group-2,
+  iframe {
     width: 750px;
   }
 
@@ -425,7 +427,8 @@ footer p:nth-of-type(1) {
       height: 300px;
     }
 
-    .image-group-2 {
+    .image-group-2,
+    iframe {
       width: 1050px;
       height: 350px;
     }
