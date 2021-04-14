@@ -1,8 +1,11 @@
+/*Fonts*/
+
 /* open-sans-regular - latin */
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url('../fonts/open-sans-v18-latin-regular.eot'); /* IE9 Compat Modes */
   src: local(''),
        url('../fonts/open-sans-v18-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -17,6 +20,7 @@
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
   src: url('../fonts/open-sans-v18-latin-700.eot'); /* IE9 Compat Modes */
   src: local(''),
        url('../fonts/open-sans-v18-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -31,6 +35,7 @@
   font-family: 'Open Sans';
   font-style: italic;
   font-weight: 700;
+  font-display: swap;
   src: url('../fonts/open-sans-v18-latin-700italic.eot'); /* IE9 Compat Modes */
   src: local(''),
        url('../fonts/open-sans-v18-latin-700italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -40,6 +45,7 @@
        url('../fonts/open-sans-v18-latin-700italic.svg#OpenSans') format('svg'); /* Legacy iOS */
 }
 
+/*Fonts*/
 
 /*Body*/
 
