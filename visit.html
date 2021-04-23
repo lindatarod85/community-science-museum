@@ -9,6 +9,15 @@
     <link href="styles/style.css" rel="stylesheet" />
     <link href="styles/media.css" rel="stylesheet" />
     <script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = 'https://use.fontawesome.com/releases/v5.15.1/css/all.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
+    <script>
+        function init() {
+  var vidDefer = document.getElementsByTagName('iframe');
+  for (var i=0; i<vidDefer.length; i++) {
+    if(vidDefer[i].getAttribute('data-src')) {
+      vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
+} } }
+window.onload = init;
+    </script>
 </head>
 <body>
     <header>
@@ -109,14 +118,5 @@
             <i class="fab fa-snapchat-square fa-3x"></i>
         </div>
     </footer>  
-    <script>
-        function init() {
-            var vidDefer = document.getElementsByTagName('iframe');
-            for (var i=0; i<vidDefer.length; i++) {
-                if(vidDefer[i].getAttribute('data-src')) {
-                    vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
-                } } }
-                window.onload = init;
-    </script>
 </body>
 </html>
