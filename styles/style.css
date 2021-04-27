@@ -227,6 +227,20 @@ form {
   margin-top: 30px;
 }
 
+.success-message {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 300px;
+  position: relative;
+  top: 250px;
+  background-color: #ffffff;
+}
+
+span {
+  display: block;
+}
+
 /*Layout*/
 
 /*General styles*/
