@@ -148,7 +148,8 @@ nav a:hover,
 .see-do-scroll-to-section a:hover,
 .contact:hover,
 .visit-scroll-to-section a:hover,
-.send:hover {
+.send:hover,
+.exit:hover {
   text-decoration: underline 2px;
 }
 
@@ -173,7 +174,7 @@ nav a:hover,
   padding-bottom: 15px;
 }
 
-.contact {
+.contact, .exit {
   text-decoration: none;
   color: #1b365d;
   font-weight: bold;
@@ -239,6 +240,13 @@ form {
   text-align: center;
   height: 300px;
   background-color: #ffffff;
+  position: relative;
+}
+
+.exit {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
 }
 
 /*Layout*/
