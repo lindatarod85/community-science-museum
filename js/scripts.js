@@ -8,9 +8,5 @@ function init() {
 }
 window.onload = init;
 
-function myFunction() {
-  window.location.href ="https://sleepy-kalam-c110d5.netlify.app/thank-you.html";
-}
-
     
     
