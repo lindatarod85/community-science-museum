@@ -9,8 +9,8 @@ An informational website for the local Community Sicence Museum, showing exhibit
 The webiste sets out to:
 
 - Attract people to come visit the museum
-- Being a good source of information
-- Showing/ branding all the fun activites for families and schoolclasses
+- Make people explore the website
+- Show practical information about the museum
 
 ## Built With
 
