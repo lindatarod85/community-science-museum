@@ -1,6 +1,6 @@
 # Community Science Museum
 
-![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
+![image](https://github.com/lindatarod85/community-science-museum/blob/main/images/museum.jpg)
 
 An informational website for the local Community Sicence Museum, showing exhibitions, activities, and events, as well as practical information such as opening hours and location.
 
